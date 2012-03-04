@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Blank_ihj", "Blank_ihj\Blank_ihj.vcproj", "{0AF18ADD-BA08-4BFB-92C9-FEDD74F09326}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hijack", "HIJ_UI\HIJ_UI.vcproj", "{ABDC2AA9-3C1A-49FD-BECB-DC3D65BA1297}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DE83E12-8866-446C-8B70-EF1843E7CCAB} = {5DE83E12-8866-446C-8B70-EF1843E7CCAB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DoHijack", "DoHijack\DoHijack.vcproj", "{5DE83E12-8866-446C-8B70-EF1843E7CCAB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0AF18ADD-BA08-4BFB-92C9-FEDD74F09326} = {0AF18ADD-BA08-4BFB-92C9-FEDD74F09326}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AF18ADD-BA08-4BFB-92C9-FEDD74F09326}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0AF18ADD-BA08-4BFB-92C9-FEDD74F09326}.Debug|Win32.Build.0 = Debug|Win32
+		{0AF18ADD-BA08-4BFB-92C9-FEDD74F09326}.Release|Win32.ActiveCfg = Release|Win32
+		{0AF18ADD-BA08-4BFB-92C9-FEDD74F09326}.Release|Win32.Build.0 = Release|Win32
+		{ABDC2AA9-3C1A-49FD-BECB-DC3D65BA1297}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABDC2AA9-3C1A-49FD-BECB-DC3D65BA1297}.Debug|Win32.Build.0 = Debug|Win32
+		{ABDC2AA9-3C1A-49FD-BECB-DC3D65BA1297}.Release|Win32.ActiveCfg = Release|Win32
+		{ABDC2AA9-3C1A-49FD-BECB-DC3D65BA1297}.Release|Win32.Build.0 = Release|Win32
+		{5DE83E12-8866-446C-8B70-EF1843E7CCAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5DE83E12-8866-446C-8B70-EF1843E7CCAB}.Debug|Win32.Build.0 = Debug|Win32
+		{5DE83E12-8866-446C-8B70-EF1843E7CCAB}.Release|Win32.ActiveCfg = Release|Win32
+		{5DE83E12-8866-446C-8B70-EF1843E7CCAB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

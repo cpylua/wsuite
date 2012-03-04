@@ -1,0 +1,7 @@
+08.10.29
+==================================
+add message hint after finishing scanning
+
+08.11.17
+==================================
+add some malicious file types check

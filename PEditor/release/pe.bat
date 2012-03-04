@@ -1,0 +1,1 @@
+mt.exe -manifest PEditor.exe.intermediate.manifest -outputresource:ErrorShow.exe;1

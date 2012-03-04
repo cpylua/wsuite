@@ -1,0 +1,1 @@
+You can not delete the unnamed stream alone(the main stream), deleting it also delets all the other alternate streams if there's any.

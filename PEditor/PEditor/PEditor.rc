@@ -1,0 +1,367 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 267, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_APPWINDOW
+CAPTION "PEditor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Open",IDC_BUTTON_OPEN,7,41,60,14
+    PUSHBUTTON      "File Header",IDC_BUTTON_FILEHEADER,71,41,60,14
+    PUSHBUTTON      "Optional Header",IDC_BUTTON_OPTIONAL,135,41,60,14
+    PUSHBUTTON      "Sections",IDC_BUTTON_SECTION,200,41,60,14
+    EDITTEXT        IDC_EDIT_FILEPATH,7,16,253,13,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "",IDC_STATIC_WARNING,26,31,216,11
+    LTEXT           "Choose a file:",IDC_STATIC,7,3,86,11
+END
+
+IDD_DIALOG_FILEHEADER DIALOGEX 0, 0, 187, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FileHeader"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_BUTTON_FILEHDR_OK,129,153,50,14
+    PUSHBUTTON      "DosHeader",IDC_BUTTON_DOSHEADER,7,153,50,14
+    LTEXT           "Machine (WORD):",IDC_STATIC_MACHINE,14,34,74,9
+    LTEXT           "NumberOfSections (WORD):",IDC_STATIC_NUMOFSECTIONS,14,50,97,9
+    LTEXT           "TimeDateStamp (DWORD):",IDC_STATIC_TIMEDATESTAMP,14,67,94,9
+    LTEXT           "PointerToSymbolTable (DWORD):",IDC_STATIC_POINTERTOSYMBOLTABLE,14,85,109,9
+    LTEXT           "NumberOfSymbols (DWORD):",IDC_STATIC_NUMOFSYMBOLS,14,103,100,9
+    LTEXT           "SizeOfOptionalHeader (WORD):",IDC_STATIC_OPTIONALSIZE,14,121,102,9
+    LTEXT           "Characteristics (WORD):",IDC_STATIC,14,139,94,9
+    EDITTEXT        IDC_EDIT_MACHINE,129,33,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUMOFSECTIONS,130,50,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIMESTAMP,130,67,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUMOFSYMBOLS,130,101,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POINTERTOSYMBOLTABLE,130,84,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHARACTERISTICS,130,135,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFOPTIONALHEADER,130,118,40,12,ES_AUTOHSCROLL
+    LTEXT           "Note the value type when you modify the values.",IDC_STATIC,7,8,172,8
+    GROUPBOX        "FileHeader Members:",IDC_STATIC,7,22,172,129
+END
+
+IDD_DIALOG_DOSHEADER DIALOGEX 0, 0, 296, 231
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DosHeader"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_BUTTON_DOSHDR_OK,239,213,50,14
+    LTEXT           "e_magic (WORD):",IDC_STATIC,13,35,62,11
+    LTEXT           "e_ip (WORD):",IDC_STATIC,151,55,62,11
+    LTEXT           "e_cs (WORD):",IDC_STATIC,151,75,66,11
+    LTEXT           "e_cblp (WORD):",IDC_STATIC,13,55,62,11
+    LTEXT           "e_lfanew (LONG):",IDC_STATIC,151,175,63,11
+    LTEXT           "e_cp (WORD):",IDC_STATIC,13,75,72,11
+    LTEXT           "e_csum (WORD):",IDC_STATIC,151,35,58,11
+    LTEXT           "e_crlc (WORD):",IDC_STATIC,13,95,71,11
+    LTEXT           "e_lfarlc (WORD):",IDC_STATIC,151,95,62,11
+    LTEXT           "e_ovno (WORD):",IDC_STATIC,151,115,65,11
+    LTEXT           "e_minalloc (WORD):",IDC_STATIC,13,135,65,11
+    LTEXT           "e_cparhdr (WORD):",IDC_STATIC,13,115,68,11
+    LTEXT           "e_maxalloc (WORD):",IDC_STATIC,13,155,77,11
+    LTEXT           "e_ss (WORD):",IDC_STATIC,13,175,69,11
+    LTEXT           "e_oemid (WORD):",IDC_STATIC,151,135,69,11
+    LTEXT           "e_sp (WORD):",IDC_STATIC,13,196,62,11
+    LTEXT           "e_oeminfo (WORD):",IDC_STATIC,151,155,70,11
+    EDITTEXT        IDC_EDIT_MAGIC,85,32,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CBLP,85,52,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CP,85,72,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CRLC,85,92,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CPARHDR,85,112,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINALLOC,85,132,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAXALLOC,85,152,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SS,85,172,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SP,85,193,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CSUM,236,32,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_IP,236,52,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CS,236,72,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OVNO,236,112,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LFARLC,236,92,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OEMID,236,132,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OEMINFO,236,152,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LFANEW,236,172,46,14,ES_AUTOHSCROLL
+    LTEXT           "Two reserved structure members are omitted.",IDC_STATIC_DOSHDR_NOTE,6,212,151,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Note the value type when you modify the values.",IDC_STATIC,6,7,170,11
+    GROUPBOX        "DosHeader Members:",IDC_STATIC,6,21,283,189
+END
+
+IDD_DIALOG_OPTIONALHDR DIALOGEX 0, 0, 554, 250
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Optional Header"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_BUTTON_OPTHDR_OK,497,235,50,13
+    LTEXT           "Magic (WORD):",IDC_STATIC,15,33,73,8
+    LTEXT           "MajorLinkerVersion (BYTE):",IDC_STATIC,15,50,96,8
+    LTEXT           "SectionAlignment (DWORD)",IDC_STATIC,187,33,90,8
+    LTEXT           "MinorLinkerVersion (BYTE):",IDC_STATIC,15,67,92,8
+    LTEXT           "SizeOfCode (DWORD):",IDC_STATIC,15,84,82,8
+    LTEXT           "SizeOfInitializedData (DWORD):",IDC_STATIC,15,101,117,8
+    LTEXT           "SizeOfUninitializedData (DWORD):",IDC_STATIC,15,118,118,8
+    LTEXT           "BaseOfCode (DWORD):",IDC_STATIC,15,152,89,8
+    LTEXT           "AddressOfEntryPoint (DWORD):",IDC_STATIC,15,135,112,8
+    LTEXT           "ImageBase (DWORD):",IDC_STATIC,15,186,92,8
+    LTEXT           "Note the value type when you modify the values.",IDC_STATIC,7,7,166,8
+    GROUPBOX        "OptionalHeader Members:",IDC_STATIC,7,19,540,215
+    LTEXT           "BaseOfData (DWORD):",IDC_STATIC,15,169,106,8
+    LTEXT           "FileAlignment (DWORD):",IDC_STATIC,187,50,108,8
+    LTEXT           "MajorOperatingSystemVersion (WORD):",IDC_STATIC,187,67,140,8
+    LTEXT           "MinorOperatingSystemVersion (WORD):",IDC_STATIC,187,84,131,8
+    LTEXT           "MajorImageVersion (WORD):",IDC_STATIC,187,101,108,8
+    LTEXT           "MinorImageVersion (WORD):",IDC_STATIC,187,118,108,8
+    LTEXT           "MajorSubsystemVersion (WORD):",IDC_STATIC,187,135,108,8
+    LTEXT           "MinorSubsystemVersion (WORD):",IDC_STATIC,187,152,108,8
+    LTEXT           "CheckSum (DWORD):",IDC_STATIC,380,50,108,8
+    LTEXT           "Win32VersionValue (DWORD):",IDC_STATIC,187,169,108,8
+    LTEXT           "Subsystem (WORD):",IDC_STATIC,380,67,108,8
+    LTEXT           "SizeOfHeaders (DWORD):",IDC_STATIC,380,33,108,8
+    LTEXT           "DllCharacteristics(WORD):",IDC_STATIC,380,84,108,8
+    LTEXT           "SizeOfStackReserve (DWORD):",IDC_STATIC,380,101,108,8
+    LTEXT           "SizeOfImage (DWORD):",IDC_STATIC,187,186,108,8
+    EDITTEXT        IDC_EDIT_MAGIC,135,31,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAJORLINKER,135,48,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINORLINKERVERSION,135,65,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEODCODE,135,82,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFINILIZEDATA,135,99,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFUNINILIZEDDATA,135,116,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDRESSOFENTRYPOINT,135,133,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BASEOFCODE,135,150,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BASEOFDATA,135,167,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_IMAGEBASE,135,184,39,12,ES_AUTOHSCROLL
+    LTEXT           "SizeOfStackCommit (DWORD):",IDC_STATIC,380,118,108,8
+    LTEXT           "SizeOfHeapCommit (DWORD):",IDC_STATIC,380,152,108,8
+    LTEXT           "SizeOfHeapReserve (DWORD):",IDC_STATIC,380,135,108,8
+    LTEXT           "NumberOfRvaAndSizes (DWORD):",IDC_STATIC,380,186,121,8
+    LTEXT           "LoaderFlags (DWORD):",IDC_STATIC,380,169,108,8
+    LTEXT           "VirtualAddress (DWORD):",IDC_STATIC,97,206,88,11
+    LTEXT           "Size (DWORD):",IDC_STATIC,97,218,64,8
+    GROUPBOX        "Image DataDirectory:",IDC_STATIC,14,199,526,33
+    EDITTEXT        IDC_EDIT_VIRTUALADDRESS,193,204,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZE,193,218,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFHEADERS,502,31,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHECKSUM,502,48,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SUBSYSTEM,502,65,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DLLCHARATERRISTICS,502,82,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFSTACKRESERVE,502,99,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFSTACKCOMMIT,502,116,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFHEAPRESERVE,502,133,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFHEAPCOMMIT,502,150,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOADFLAG,502,167,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECTIONALIGNMENT,330,31,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FILESLIGNMENT,330,48,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAJOROPERATONVER,330,65,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINOROPERATIONVER,330,82,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAJORIMAGEVERSION,330,99,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINORIMAGEVERSION,330,116,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAJORSUBSYSTEMVERSION,330,133,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINORSUBSYSTEMVERSION,330,150,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WIN32VERSIONVALUE,330,167,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFIMAGE,330,184,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUMOFRVAANDSIZE,502,184,39,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_DATADIR,16,210,73,100,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    LTEXT           "Email: tmigoml@hotmail.com",IDC_STATIC,7,237,99,11
+END
+
+IDD_DIALOG_SECTION DIALOGEX 0, 0, 362, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SectionHeaders"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDC_BUTTON_SECT_CANCEL,304,127,50,14
+    PUSHBUTTON      "Update",IDC_BUTTON_SECT_UPDATE,7,127,50,14
+    LTEXT           "Current Section:",IDC_STATIC,35,7,53,9
+    LTEXT           "Total Sections:",IDC_STATIC,253,7,48,8
+    LTEXT           "",IDC_STATIC_CURRENTSECTION,97,7,16,9
+    LTEXT           "",IDC_STATIC_TOTALSECTIONS,305,7,17,9
+    LTEXT           "Name (8Bytes):",IDC_STATIC,15,33,51,9
+    LTEXT           "PhyAddr/VirSize (DWORD):",IDC_STATIC,15,52,88,9
+    LTEXT           "VirtualAddress (DWORD):",IDC_STATIC,15,71,84,9
+    LTEXT           "SizeOfRawData (DWORD):",IDC_STATIC,15,90,87,9
+    LTEXT           "PointerToRawData (DWORD):",IDC_STATIC,15,109,97,9
+    LTEXT           "PointerToRelocations (DWORD):",IDC_STATIC,188,33,105,9
+    LTEXT           "PointerToLinenumbers (WORD):",IDC_STATIC,188,52,109,9
+    LTEXT           "NumberOfRelocations (WORD):",IDC_STATIC,188,71,106,9
+    LTEXT           "NumberOfLinenumbers (DWORD):",IDC_STATIC,188,90,110,9
+    LTEXT           "Characteristics (DWORD):",IDC_STATIC,188,109,88,9
+    EDITTEXT        IDC_EDIT_NAME,123,33,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PHYADDR,123,51,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VIRTUALADDR,123,69,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZEOFRAWDATA,123,87,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POINTERTORAWDATA,123,105,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PTTORELOC,309,33,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PTTOLINENUM,309,51,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUMOFRELOC,309,69,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUMOFLINENUM,309,87,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECT_CHARACTERICIS,309,105,38,12,ES_AUTOHSCROLL
+    GROUPBOX        "SectionHeader Members:",IDC_STATIC,7,20,348,104
+    PUSHBUTTON      "Next",IDC_BUTTON_SECT_NEXT,205,127,50,14
+    PUSHBUTTON      "Prev",IDC_BUTTON_SECT_PREV,106,127,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_FILEHEADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG_DOSHEADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DIALOG_OPTIONALHDR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 547
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_DIALOG_SECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_PE             ICON                    "icon_pe.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x37L
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "Whislter"
+            VALUE "FileDescription", "PEditor PE header editor"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "PEditor"
+            VALUE "LegalCopyright", "Copyright (C) Whislter 2008"
+            VALUE "LegalTrademarks", "PEditor"
+            VALUE "OriginalFilename", "PEditor.exe"
+            VALUE "ProductName", "PEditor"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+            VALUE "SpecialBuild", "1,0,0,0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

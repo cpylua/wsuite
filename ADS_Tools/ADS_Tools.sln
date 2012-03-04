@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CopyStream", "ADS_Tools\ADS_Tools.vcproj", "{FF5A8D1E-54B2-47A4-8E4C-7093617B3A05}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DelStream", "DelStream\DelStream.vcproj", "{700FD9D9-5E86-4A23-8B3F-3A15C5B745E7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ListStream", "ListStream\ListStream.vcproj", "{2FFB0A3A-43B0-4A2D-A1C6-35CE61C613F8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NTFS_ADSTool", "NTFS_ADSTool\NTFS_ADSTool.vcproj", "{8629797F-07C6-420E-980A-3BDD99314B41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF5A8D1E-54B2-47A4-8E4C-7093617B3A05}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF5A8D1E-54B2-47A4-8E4C-7093617B3A05}.Debug|Win32.Build.0 = Debug|Win32
+		{FF5A8D1E-54B2-47A4-8E4C-7093617B3A05}.Release|Win32.ActiveCfg = Release|Win32
+		{FF5A8D1E-54B2-47A4-8E4C-7093617B3A05}.Release|Win32.Build.0 = Release|Win32
+		{700FD9D9-5E86-4A23-8B3F-3A15C5B745E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{700FD9D9-5E86-4A23-8B3F-3A15C5B745E7}.Debug|Win32.Build.0 = Debug|Win32
+		{700FD9D9-5E86-4A23-8B3F-3A15C5B745E7}.Release|Win32.ActiveCfg = Release|Win32
+		{700FD9D9-5E86-4A23-8B3F-3A15C5B745E7}.Release|Win32.Build.0 = Release|Win32
+		{2FFB0A3A-43B0-4A2D-A1C6-35CE61C613F8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2FFB0A3A-43B0-4A2D-A1C6-35CE61C613F8}.Debug|Win32.Build.0 = Debug|Win32
+		{2FFB0A3A-43B0-4A2D-A1C6-35CE61C613F8}.Release|Win32.ActiveCfg = Release|Win32
+		{2FFB0A3A-43B0-4A2D-A1C6-35CE61C613F8}.Release|Win32.Build.0 = Release|Win32
+		{8629797F-07C6-420E-980A-3BDD99314B41}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8629797F-07C6-420E-980A-3BDD99314B41}.Debug|Win32.Build.0 = Debug|Win32
+		{8629797F-07C6-420E-980A-3BDD99314B41}.Release|Win32.ActiveCfg = Release|Win32
+		{8629797F-07C6-420E-980A-3BDD99314B41}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

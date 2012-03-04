@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PPTS", "PPTS\PPTS.vcproj", "{D07419E1-51C1-40D9-8CF6-41D31CBF636B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Host", "Host\Host.vcproj", "{397A1AA6-C6C8-482D-A27C-CC10BC0794B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D07419E1-51C1-40D9-8CF6-41D31CBF636B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D07419E1-51C1-40D9-8CF6-41D31CBF636B}.Debug|Win32.Build.0 = Debug|Win32
+		{D07419E1-51C1-40D9-8CF6-41D31CBF636B}.Release|Win32.ActiveCfg = Release|Win32
+		{D07419E1-51C1-40D9-8CF6-41D31CBF636B}.Release|Win32.Build.0 = Release|Win32
+		{397A1AA6-C6C8-482D-A27C-CC10BC0794B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{397A1AA6-C6C8-482D-A27C-CC10BC0794B9}.Debug|Win32.Build.0 = Debug|Win32
+		{397A1AA6-C6C8-482D-A27C-CC10BC0794B9}.Release|Win32.ActiveCfg = Release|Win32
+		{397A1AA6-C6C8-482D-A27C-CC10BC0794B9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
